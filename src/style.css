@@ -36,10 +36,10 @@
     border: 2px solid #067e3a;
     border-radius: inherit;
     pointer-events: none;
-    animation: novedades-pulse 3s ease-out infinite;
+    animation: novedades-pulse 1.5s ease-out infinite;
   }
 
-  .ca-novedades__button::after,
+  .ca-novedades__button:hover::after,
   .ca-novedades__button:focus-visible::after,
   .ca-novedades__button:active::after {
     animation: none;
@@ -58,4 +58,20 @@
     inset: -12px;
     opacity: 0;
   }
+}
+
+.ca-newItem {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.newItem__title {
+  padding: 10px;
+  background-color: #067e3a;
+  color: #fff;
 }
