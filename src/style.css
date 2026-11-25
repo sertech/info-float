@@ -99,20 +99,26 @@
 .ca-newItem h1,
 .ca-newItem h3,
 .ca-newItem p,
-.ca-newItem ul {
-  margin: 0;
+.ca-newItem ul,
+.ca-newItem a {
+  margin: 0 !important;
 }
 
 .ca-newItem h1 {
-  font-size: 18px;
-  line-height: 1.2;
-  margin: 4px 0;
+  font-size: 18px !important;
+  line-height: 1.2 !important;
+  margin: 4px 0 !important;
+}
+
+.ca-newItem a {
+  font-size: 14px !important;
+  line-height: 1.2 !important;
 }
 
 .ca-newItem h3 {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .ca-newItem ul {
-  padding-left: 20px;
+  padding-left: 20px !important;
 }
