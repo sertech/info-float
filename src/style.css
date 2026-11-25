@@ -66,9 +66,9 @@
 
 .ca-newItem {
   box-sizing: border-box;
-  width: min(460px, calc(100vw-56px));
+  width: min(500px, calc(100vw - 56px));
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: stretch;
   gap: 10px;
   padding: 0;
@@ -80,6 +80,7 @@
   border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+  visibility: hidden;
 }
 
 .newItem__title {
