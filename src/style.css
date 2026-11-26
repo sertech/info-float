@@ -2,6 +2,7 @@
   position: fixed;
   top: 30%;
   right: 40px;
+  z-index: 100;
 
   display: flex;
   flex-direction: column;
@@ -12,7 +13,7 @@
   position: relative;
   padding: 15px;
   color: #fff;
-  background-color: #067e3a;
+  background-color: #3aaa35;
   border: 2px solid #fff;
   border-radius: 25px;
   cursor: pointer;
@@ -66,7 +67,7 @@
 
 .ca-newItem {
   box-sizing: border-box;
-  width: min(500px, calc(100vw - 56px));
+  width: min(550px, calc(100vw - 56px));
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -89,6 +90,27 @@
   padding: 15px;
   background-color: #067e3a;
   color: #fff;
+  object-fit: contain;
+}
+
+.newItem__title img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.ca-card-title__container {
+  display: flex;
+  object-fit: contain;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.ca-card-title__container img {
+  display: block;
+  width: 15%;
+  height: auto;
 }
 
 .newItem__content {
@@ -108,11 +130,20 @@
   font-size: 18px !important;
   line-height: 1.2 !important;
   margin: 4px 0 !important;
+  font-weight: bolder;
 }
 
 .ca-newItem a {
   font-size: 14px !important;
   line-height: 1.2 !important;
+}
+
+.ca-newItem li span a {
+  color: #067e3a;
+}
+
+.newItem__content span a {
+  color: #067e3a;
 }
 
 .ca-newItem h3 {
@@ -121,4 +152,15 @@
 
 .ca-newItem ul {
   padding-left: 20px !important;
+}
+
+.ca-novedades .ca-newItem p,
+.ca-novedades .ca-newItem li {
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.ca-newItem h1.ca-title {
+  color: #067e3a;
+  font-weight: 900;
 }
